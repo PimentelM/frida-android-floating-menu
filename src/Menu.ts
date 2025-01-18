@@ -100,9 +100,9 @@ export default class Menu {
       ViewGroup$LayoutParams.WRAP_CONTENT.value,
       WindowManager$LayoutParams.TYPE_APPLICATION.value,
       WindowManager$LayoutParams.FLAG_NOT_FOCUSABLE.value |
-        WindowManager$LayoutParams.FLAG_LAYOUT_IN_OVERSCAN.value |
-        WindowManager$LayoutParams.FLAG_LAYOUT_IN_SCREEN.value |
-        WindowManager$LayoutParams.FLAG_SPLIT_TOUCH.value,
+      WindowManager$LayoutParams.FLAG_LAYOUT_IN_OVERSCAN.value |
+      WindowManager$LayoutParams.FLAG_LAYOUT_IN_SCREEN.value |
+      WindowManager$LayoutParams.FLAG_SPLIT_TOUCH.value,
       PixelFormat.TRANSPARENT.value,
     );
 
@@ -637,7 +637,7 @@ export default class Menu {
    **/
   public endCollapse() {
     if (this.curCollapse === null) throw new Error('You must start a collapse before ending it');
-    this.featureView.addView(this.curCollapse);
+    // this.featureView.addView(this.curCollapse);
     this.curCollapse = null;
   }
 
@@ -866,9 +866,9 @@ export default class Menu {
   }
 
   private SeekBar$OnSeekBarChangeListener({
-    onProgressChanged = (seekBar, progress, fromUser) => {},
-    onStartTrackingTouch = (seekBar) => {},
-    onStopTrackingTouch = (seekBar) => {},
+    onProgressChanged = (seekBar, progress, fromUser) => { },
+    onStartTrackingTouch = (seekBar) => { },
+    onStopTrackingTouch = (seekBar) => { },
   }: {
     onProgressChanged?: (seekBar: Java.Wrapper, progress: number, fromUser: boolean) => void;
     onStartTrackingTouch?: (seekBar: Java.Wrapper) => void;

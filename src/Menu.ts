@@ -333,9 +333,11 @@ export default class Menu {
 
   /** @internal */
   private addFeature(view: Java.Wrapper): void {
+    const currCollapse = this.curCollapse;
+    const featureView = this.featureView;
     Java.scheduleOnMainThread(() => {
-      if (this.curCollapse === null) this.featureView.addView(view);
-      else this.curCollapse.addView(view);
+      if (currCollapse === null) featureView.addView(view);
+      else currCollapse.addView(view);
     });
   }
 

@@ -226,35 +226,6 @@ export default class Menu {
       }),
     );
 
-    hideBtn.setOnLongClickListener(
-      this.View$OnLongClickListener((view) => {
-        const builder = AlertDialog$Builder.$new(this.context);
-        builder.setTitle(JString.$new('Are you sure you want to kill the menu?'));
-        builder.setMessage(
-          JString.$new(
-            'Killing the menu will remove it from the screen. You can always restart the app to get it back.',
-          ),
-        );
-        builder.setPositiveButton(
-          JString.$new('Yes'),
-          this.DialogInterface$OnClickListener((dialog, which) => {
-            this.killMenu();
-            Toast.makeText(this.context, JString.$new('Menu killed'), Toast.LENGTH_SHORT.value).show();
-          }),
-        );
-
-        builder.setNegativeButton(
-          JString.$new('No'),
-          this.DialogInterface$OnClickListener((dialog, which) => {
-            // Do nothing
-          }),
-        );
-
-        const dialog = builder.create();
-        dialog.show();
-      }),
-    );
-
     const closeBtnLayoutParams = RelativeLayout$LayoutParams.$new(
       ViewGroup$LayoutParams.WRAP_CONTENT.value,
       ViewGroup$LayoutParams.WRAP_CONTENT.value,
@@ -895,20 +866,6 @@ export default class Menu {
       name: `${className}_OnCheckedChangeListener$${lambdaCounter()}`,
       implements: [Java.use('android.widget.CompoundButton$OnCheckedChangeListener')],
       methods: { onCheckedChanged: fn },
-    }).$new();
-  }
-
-  /** @internal */
-  private View$OnLongClickListener(fn: (view: Java.Wrapper) => void): Java.Wrapper {
-    return Java.registerClass({
-      name: `${className}_OnLongClickListener$${lambdaCounter()}`,
-      implements: [Java.use('android.view.View$OnLongClickListener')],
-      methods: {
-        onLongClick: function (view: Java.Wrapper): boolean {
-          fn(view);
-          return true;
-        },
-      },
     }).$new();
   }
 

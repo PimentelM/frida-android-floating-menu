@@ -410,7 +410,10 @@ export default class Menu {
     switchView.setText(Html.fromHtml(featName));
     switchView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
     switchView.setPadding(10, 5, 0, 5);
-    switchView.setChecked(value.get());
+    try {
+      switchView.setChecked(value.get());
+    } catch (e) {
+    }
 
     try {
       switchView.getThumbDrawable().setTintList(colorStateList);

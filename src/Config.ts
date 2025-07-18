@@ -1,3 +1,5 @@
+import Java from 'frida-java-bridge';
+
 const Html = Java.use('android.text.Html');
 const Color = Java.use('android.graphics.Color');
 

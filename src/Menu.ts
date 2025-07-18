@@ -1,6 +1,7 @@
 import Config from './Config.js';
 import { initCounter } from './util.js';
 import type Primitive from './Primitive.js';
+import Java from 'frida-java-bridge';
 
 const lambdaCounter = initCounter();
 

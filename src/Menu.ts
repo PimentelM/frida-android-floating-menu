@@ -1,4 +1,4 @@
-// import Java from 'frida-java-bridge'
+import Java from 'frida-java-bridge'
 import { initCounter } from './util.js';
 import type Primitive from './Primitive.js';
 import { ConfigInterface } from './Config.js';
@@ -29,7 +29,7 @@ export interface MenuInterface {
 const lambdaCounter = initCounter();
 
 export default (activityName: string, config_: ConfigInterface, callback: (menu: MenuInterface) => void): void => {
-  const Java: any = require('frida-java-bridge');
+  // const Java: any = require('frida-java-bridge');
   console.log('Making menu object')
   Java.perform(() => {
     console.log('Inside Java.perform - Menu')

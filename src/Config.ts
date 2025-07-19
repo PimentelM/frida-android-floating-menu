@@ -1,38 +1,37 @@
 import Java from 'frida-java-bridge';
 
-const Html = Java.use('android.text.Html');
-const Color = Java.use('android.graphics.Color');
-
 /**
  * MenuConfig
  * @class A class that contains all the configuration for the menu.
  */
 export default class Config {
+  private Color = Java.use('android.graphics.Color');
+  private Html = Java.use('android.text.Html');
   public MENU_WIDTH = 290;
   public MENU_HEIGHT = 210;
   public MENU_COLLAPSED_ALPHA = 0.7;
   public MENU_LAUNCHER_ICON_SIZE = 45;
   public MENU_TITLE_SIZE = 18;
   public MENU_SUBTITLE_SIZE = 10;
-  public BTN_ON_BG_COLOR = Color.parseColor('#1b5e20');
-  public BTN_OFF_BG_COLOR = Color.parseColor('#7f0000');
-  public CHECKBOX_COLOR = Color.parseColor('#80CBC4');
-  public MENU_CLOSE_BUTTON_TEXT = Html.fromHtml('&#x2715;');
-  public MENU_HIDE_BUTTON_TEXT = Html.fromHtml('&#x25B3;');
-  public MENU_FEATURE_BG_COLOR = Color.parseColor('#DD141C22');
-  public TEXT_COLOR_PRIMARY = Color.parseColor('#82CAFD');
-  public MENU_CATEGORY_BG_COLOR = Color.parseColor('#2F3D4C');
-  public MENU_BG_COLOR = Color.parseColor('#EE1C2A35');
-  public RADIO_BUTTON_COLOR = Color.parseColor('#FFFFFF');
-  public NUMBER_TEXT_COLOR = Color.parseColor('#41c300');
-  public MENU_TITLE = Html.fromHtml('Moded By (your name)');
-  public MENU_BUTTON_BG_COLOR = Color.parseColor('#1C262D');
-  public SEEKBAR_COLOR = Color.parseColor('#80CBC4');
-  public SEEKBAR_PROGRESS_COLOR = Color.parseColor('#80CBC4');
-  public TEXT_COLOR_SECONDARY = Color.parseColor('#FFFFFF');
-  public COLLAPSE_BG_COLOR = Color.parseColor('#222D38');
+  public BTN_ON_BG_COLOR = this.Color.parseColor('#1b5e20');
+  public BTN_OFF_BG_COLOR = this.Color.parseColor('#7f0000');
+  public CHECKBOX_COLOR = this.Color.parseColor('#80CBC4');
+  public MENU_CLOSE_BUTTON_TEXT = this.Html.fromHtml('&#x2715;');
+  public MENU_HIDE_BUTTON_TEXT = this.Html.fromHtml('&#x25B3;');
+  public MENU_FEATURE_BG_COLOR = this.Color.parseColor('#DD141C22');
+  public TEXT_COLOR_PRIMARY = this.Color.parseColor('#82CAFD');
+  public MENU_CATEGORY_BG_COLOR = this.Color.parseColor('#2F3D4C');
+  public MENU_BG_COLOR = this.Color.parseColor('#EE1C2A35');
+  public RADIO_BUTTON_COLOR = this.Color.parseColor('#FFFFFF');
+  public NUMBER_TEXT_COLOR = this.Color.parseColor('#41c300');
+  public MENU_TITLE = this.Html.fromHtml('Moded By (your name)');
+  public MENU_BUTTON_BG_COLOR = this.Color.parseColor('#1C262D');
+  public SEEKBAR_COLOR = this.Color.parseColor('#80CBC4');
+  public SEEKBAR_PROGRESS_COLOR = this.Color.parseColor('#80CBC4');
+  public TEXT_COLOR_SECONDARY = this.Color.parseColor('#FFFFFF');
+  public COLLAPSE_BG_COLOR = this.Color.parseColor('#222D38');
 
-  public MENU_SUBTITLE = Html.fromHtml('https://site.com lorem ipsum dolor sit amet consectetur adipiscing elit');
+  public MENU_SUBTITLE = this.Html.fromHtml('https://site.com lorem ipsum dolor sit amet consectetur adipiscing elit');
 
   /**
    *Base 64 encoded image of the launcher icon.

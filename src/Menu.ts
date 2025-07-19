@@ -7,60 +7,60 @@ const lambdaCounter = initCounter();
 
 const className = 'com.maars.fmenu.Menu';
 
-const CheckBox = Java.use('android.widget.CheckBox');
-const ViewGroup = Java.use('android.view.ViewGroup');
-const JInteger = Java.use('java.lang.Integer');
-const Point = Java.use('android.graphics.Point');
-const RelativeLayout = Java.use('android.widget.RelativeLayout');
-const RelativeLayout$LayoutParams = Java.use('android.widget.RelativeLayout$LayoutParams');
-const LinearLayout = Java.use('android.widget.LinearLayout');
-const LinearLayout$LayoutParams = Java.use('android.widget.LinearLayout$LayoutParams');
-const ImageView = Java.use('android.widget.ImageView');
-const ImageView$ScaleType = Java.use('android.widget.ImageView$ScaleType');
-const WindowManager$LayoutParams = Java.use('android.view.WindowManager$LayoutParams');
-const PixelFormat = Java.use('android.graphics.PixelFormat');
-const ViewGroup$MarginLayoutParams = Java.use('android.view.ViewGroup$MarginLayoutParams');
-const ViewGroup$LayoutParams = Java.use('android.view.ViewGroup$LayoutParams');
-const Gravity = Java.use('android.view.Gravity');
-const View = Java.use('android.view.View');
-const FrameLayout = Java.use('android.widget.FrameLayout');
-const TypedValue = Java.use('android.util.TypedValue');
-const Base64 = Java.use('android.util.Base64');
-const TextView = Java.use('android.widget.TextView');
-const BitmapFactory = Java.use('android.graphics.BitmapFactory');
-const TextUtils$TruncateAt = Java.use('android.text.TextUtils$TruncateAt');
-const Typeface = Java.use('android.graphics.Typeface');
-const ScrollView = Java.use('android.widget.ScrollView');
-const Button = Java.use('android.widget.Button');
-const Context = Java.use('android.content.Context');
-const JString = Java.use('java.lang.String');
-const AlertDialog$Builder = Java.use('android.app.AlertDialog$Builder');
-const Toast = Java.use('android.widget.Toast');
-const MotionEvent = Java.use('android.view.MotionEvent');
-const Html = Java.use('android.text.Html');
-const Switch = Java.use('android.widget.Switch');
-const ColorStateList = Java.use('android.content.res.ColorStateList');
-const R$attr = Java.use('android.R$attr');
-const Color = Java.use('android.graphics.Color');
-const Log = Java.use('android.util.Log');
-const SeekBar = Java.use('android.widget.SeekBar');
-const Build$VERSION = Java.use('android.os.Build$VERSION');
-const Build$VERSION_CODES = Java.use('android.os.Build$VERSION_CODES');
-const PorterDuff$Mode = Java.use('android.graphics.PorterDuff$Mode');
-const EditText = Java.use('android.widget.EditText');
-const InputType = Java.use('android.text.InputType');
-const TextView$BufferType = Java.use('android.widget.TextView$BufferType');
-const WebView = Java.use('android.webkit.WebView');
-const RadioGroup = Java.use('android.widget.RadioGroup');
-const RadioButton = Java.use('android.widget.RadioButton');
-const Intent = Java.use('android.content.Intent');
-const Uri = Java.use('android.net.Uri');
-
 /**
  * @class Menu
  * @classdesc Floating menu
  */
 export default class Menu {
+  private readonly _CheckBox = Java.use('android.widget.CheckBox');
+  private readonly _ViewGroup = Java.use('android.view.ViewGroup');
+  private readonly _JInteger = Java.use('java.lang.Integer');
+  private readonly _Point = Java.use('android.graphics.Point');
+  private readonly _RelativeLayout = Java.use('android.widget.RelativeLayout');
+  private readonly _RelativeLayout$LayoutParams = Java.use('android.widget.RelativeLayout$LayoutParams');
+  private readonly _LinearLayout = Java.use('android.widget.LinearLayout');
+  private readonly _LinearLayout$LayoutParams = Java.use('android.widget.LinearLayout$LayoutParams');
+  private readonly _ImageView = Java.use('android.widget.ImageView');
+  private readonly _ImageView$ScaleType = Java.use('android.widget.ImageView$ScaleType');
+  private readonly _WindowManager$LayoutParams = Java.use('android.view.WindowManager$LayoutParams');
+  private readonly _PixelFormat = Java.use('android.graphics.PixelFormat');
+  private readonly _ViewGroup$MarginLayoutParams = Java.use('android.view.ViewGroup$MarginLayoutParams');
+  private readonly _ViewGroup$LayoutParams = Java.use('android.view.ViewGroup$LayoutParams');
+  private readonly _Gravity = Java.use('android.view.Gravity');
+  private readonly _View = Java.use('android.view.View');
+  private readonly _FrameLayout = Java.use('android.widget.FrameLayout');
+  private readonly _TypedValue = Java.use('android.util.TypedValue');
+  private readonly _Base64 = Java.use('android.util.Base64');
+  private readonly _TextView = Java.use('android.widget.TextView');
+  private readonly _BitmapFactory = Java.use('android.graphics.BitmapFactory');
+  private readonly _TextUtils$TruncateAt = Java.use('android.text.TextUtils$TruncateAt');
+  private readonly _Typeface = Java.use('android.graphics.Typeface');
+  private readonly _ScrollView = Java.use('android.widget.ScrollView');
+  private readonly _Button = Java.use('android.widget.Button');
+  private readonly _Context = Java.use('android.content.Context');
+  private readonly _JString = Java.use('java.lang.String');
+  private readonly _AlertDialog$Builder = Java.use('android.app.AlertDialog$Builder');
+  private readonly _Toast = Java.use('android.widget.Toast');
+  private readonly _MotionEvent = Java.use('android.view.MotionEvent');
+  private readonly _Html = Java.use('android.text.Html');
+  private readonly _Switch = Java.use('android.widget.Switch');
+  private readonly _ColorStateList = Java.use('android.content.res.ColorStateList');
+  private readonly _R$attr = Java.use('android.R$attr');
+  private readonly _Color = Java.use('android.graphics.Color');
+  private readonly _Log = Java.use('android.util.Log');
+  private readonly _SeekBar = Java.use('android.widget.SeekBar');
+  private readonly _Build$VERSION = Java.use('android.os.Build$VERSION');
+  private readonly _Build$VERSION_CODES = Java.use('android.os.Build$VERSION_CODES');
+  private readonly _PorterDuff$Mode = Java.use('android.graphics.PorterDuff$Mode');
+  private readonly _EditText = Java.use('android.widget.EditText');
+  private readonly _InputType = Java.use('android.text.InputType');
+  private readonly _TextView$BufferType = Java.use('android.widget.TextView$BufferType');
+  private readonly _WebView = Java.use('android.webkit.WebView');
+  private readonly _RadioGroup = Java.use('android.widget.RadioGroup');
+  private readonly _RadioButton = Java.use('android.widget.RadioButton');
+  private readonly _Intent = Java.use('android.content.Intent');
+  private readonly _Uri = Java.use('android.net.Uri');
+
   private readonly config: Config;
   private readonly position: Java.Wrapper;
   private isCollapsed: boolean;
@@ -90,21 +90,21 @@ export default class Menu {
     this.config = config;
     this.isCollapsed = true;
     this.curCollapse = null;
-    this.rootFrame = FrameLayout.$new(context);
-    this.position = Point.$new(0, 0);
-    this.mCollapsed = RelativeLayout.$new(context);
-    this.mExpanded = LinearLayout.$new(context);
-    this.launcherIcon = ImageView.$new(context);
-    this.featureView = LinearLayout.$new(context);
-    this.wmParams = WindowManager$LayoutParams.$new(
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
-      WindowManager$LayoutParams.TYPE_APPLICATION.value,
-      WindowManager$LayoutParams.FLAG_NOT_FOCUSABLE.value |
-      WindowManager$LayoutParams.FLAG_LAYOUT_IN_OVERSCAN.value |
-      WindowManager$LayoutParams.FLAG_LAYOUT_IN_SCREEN.value |
-      WindowManager$LayoutParams.FLAG_SPLIT_TOUCH.value,
-      PixelFormat.TRANSPARENT.value,
+    this.rootFrame = this._FrameLayout.$new(context);
+    this.position = this._Point.$new(0, 0);
+    this.mCollapsed = this._RelativeLayout.$new(context);
+    this.mExpanded = this._LinearLayout.$new(context);
+    this.launcherIcon = this._ImageView.$new(context);
+    this.featureView = this._LinearLayout.$new(context);
+    this.wmParams = this._WindowManager$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._WindowManager$LayoutParams.TYPE_APPLICATION.value,
+      this._WindowManager$LayoutParams.FLAG_NOT_FOCUSABLE.value |
+      this._WindowManager$LayoutParams.FLAG_LAYOUT_IN_OVERSCAN.value |
+      this._WindowManager$LayoutParams.FLAG_LAYOUT_IN_SCREEN.value |
+      this._WindowManager$LayoutParams.FLAG_SPLIT_TOUCH.value,
+      this._PixelFormat.TRANSPARENT.value,
     );
 
     this.init();
@@ -114,109 +114,109 @@ export default class Menu {
   private init(): void {
     this.rootFrame.setOnTouchListener(this.View$OnTouchListener());
     this.rootFrame.setLayoutParams(
-      ViewGroup$LayoutParams.$new(ViewGroup$LayoutParams.WRAP_CONTENT.value, ViewGroup$LayoutParams.WRAP_CONTENT.value),
+      this._ViewGroup$LayoutParams.$new(this._ViewGroup$LayoutParams.WRAP_CONTENT.value, this._ViewGroup$LayoutParams.WRAP_CONTENT.value),
     );
 
-    this.featureView.setOrientation(LinearLayout.VERTICAL.value);
-    this.wmParams.gravity.value = Gravity.TOP.value | Gravity.START.value;
+    this.featureView.setOrientation(this._LinearLayout.VERTICAL.value);
+    this.wmParams.gravity.value = this._Gravity.TOP.value | this._Gravity.START.value;
     this.wmParams.x.value = this.position.x.value;
     this.wmParams.y.value = this.position.y.value;
 
-    this.mCollapsed.setVisibility(View.VISIBLE.value);
+    this.mCollapsed.setVisibility(this._View.VISIBLE.value);
     this.mCollapsed.setAlpha(this.config.MENU_COLLAPSED_ALPHA);
 
-    this.mExpanded.setVisibility(View.GONE.value);
+    this.mExpanded.setVisibility(this._View.GONE.value);
     this.mExpanded.setBackgroundColor(this.config.MENU_BG_COLOR);
-    this.mExpanded.setOrientation(LinearLayout.VERTICAL.value);
+    this.mExpanded.setOrientation(this._LinearLayout.VERTICAL.value);
     this.mExpanded.setLayoutParams(
-      LinearLayout$LayoutParams.$new(this.dp(this.config.MENU_WIDTH), ViewGroup$LayoutParams.WRAP_CONTENT.value),
+      this._LinearLayout$LayoutParams.$new(this.dp(this.config.MENU_WIDTH), this._ViewGroup$LayoutParams.WRAP_CONTENT.value),
     );
 
-    this.launcherIcon.setScaleType(ImageView$ScaleType.FIT_XY.value);
+    this.launcherIcon.setScaleType(this._ImageView$ScaleType.FIT_XY.value);
     this.launcherIcon.setLayoutParams(
-      RelativeLayout$LayoutParams.$new(
-        ViewGroup$LayoutParams.WRAP_CONTENT.value,
-        ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._RelativeLayout$LayoutParams.$new(
+        this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+        this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
       ),
     );
     const launcherIconSize = this.dp(this.config.MENU_LAUNCHER_ICON_SIZE);
     const launcherIconLayoutParams = this.launcherIcon.getLayoutParams();
     launcherIconLayoutParams.width.value = launcherIconSize;
     launcherIconLayoutParams.height.value = launcherIconSize;
-    const launcherIconDecodedImg = Base64.decode(this.config.MENU_LAUNCHER_ICON, Base64.DEFAULT.value);
+    const launcherIconDecodedImg = this._Base64.decode(this.config.MENU_LAUNCHER_ICON, this._Base64.DEFAULT.value);
     this.launcherIcon.setImageBitmap(
-      BitmapFactory.decodeByteArray(launcherIconDecodedImg, 0, launcherIconDecodedImg.length),
+      this._BitmapFactory.decodeByteArray(launcherIconDecodedImg, 0, launcherIconDecodedImg.length),
     );
-    Java.cast(launcherIconLayoutParams, ViewGroup$MarginLayoutParams).topMargin.value = this.convertDipToPixels(10);
+    Java.cast(launcherIconLayoutParams, this._ViewGroup$MarginLayoutParams).topMargin.value = this.convertDipToPixels(10);
     this.launcherIcon.setOnTouchListener(this.View$OnTouchListener());
     this.launcherIcon.setOnClickListener(this.View$OnClickListener(() => this.expandMenu()));
 
-    const mHeader = RelativeLayout.$new(this.context);
+    const mHeader = this._RelativeLayout.$new(this.context);
     mHeader.setPadding(10, 5, 10, 5);
-    mHeader.setVerticalGravity(Gravity.CENTER_VERTICAL.value);
+    mHeader.setVerticalGravity(this._Gravity.CENTER_VERTICAL.value);
 
-    const title = TextView.$new(this.context);
+    const title = this._TextView.$new(this.context);
     title.setText(this.config.MENU_TITLE);
     title.setTextColor(this.config.TEXT_COLOR_PRIMARY);
-    title.setTypeface(null, Typeface.BOLD.value);
+    title.setTypeface(null, this._Typeface.BOLD.value);
     title.setTextSize(this.config.MENU_TITLE_SIZE);
-    title.setGravity(Gravity.CENTER.value);
-    const titleLayoutParams = RelativeLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
+    title.setGravity(this._Gravity.CENTER.value);
+    const titleLayoutParams = this._RelativeLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
     );
-    titleLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL.value);
+    titleLayoutParams.addRule(this._RelativeLayout.CENTER_HORIZONTAL.value);
     title.setLayoutParams(titleLayoutParams);
 
-    const subTitle = TextView.$new(this.context);
+    const subTitle = this._TextView.$new(this.context);
     subTitle.setText(this.config.MENU_SUBTITLE);
-    subTitle.setEllipsize(TextUtils$TruncateAt.MARQUEE.value);
+    subTitle.setEllipsize(this._TextUtils$TruncateAt.MARQUEE.value);
     subTitle.setMarqueeRepeatLimit(-1);
     subTitle.setSingleLine(true);
     subTitle.setSelected(true);
     subTitle.setTextColor(this.config.TEXT_COLOR_PRIMARY);
     subTitle.setTextSize(this.config.MENU_SUBTITLE_SIZE);
-    subTitle.setGravity(Gravity.CENTER.value);
+    subTitle.setGravity(this._Gravity.CENTER.value);
     subTitle.setPadding(0, 0, 0, 5);
 
-    const scrollView = ScrollView.$new(this.context);
+    const scrollView = this._ScrollView.$new(this.context);
     scrollView.setBackgroundColor(this.config.MENU_FEATURE_BG_COLOR);
     scrollView.setLayoutParams(
-      LinearLayout$LayoutParams.$new(ViewGroup$LayoutParams.MATCH_PARENT.value, this.dp(this.config.MENU_HEIGHT)),
+      this._LinearLayout$LayoutParams.$new(this._ViewGroup$LayoutParams.MATCH_PARENT.value, this.dp(this.config.MENU_HEIGHT)),
     );
 
-    const mFooter = RelativeLayout.$new(this.context);
+    const mFooter = this._RelativeLayout.$new(this.context);
     mFooter.setPadding(10, 3, 10, 3);
-    mFooter.setVerticalGravity(Gravity.CENTER.value);
+    mFooter.setVerticalGravity(this._Gravity.CENTER.value);
 
-    const hideBtnLayoutParams = RelativeLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
+    const hideBtnLayoutParams = this._RelativeLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
     );
-    hideBtnLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT.value);
+    hideBtnLayoutParams.addRule(this._RelativeLayout.ALIGN_PARENT_LEFT.value);
 
-    const hideBtn = Button.$new(this.context);
+    const hideBtn = this._Button.$new(this.context);
     hideBtn.setText(this.config.MENU_HIDE_BUTTON_TEXT);
     hideBtn.setTextColor(this.config.TEXT_COLOR_PRIMARY);
     hideBtn.setLayoutParams(hideBtnLayoutParams);
-    hideBtn.setBackgroundColor(Color.TRANSPARENT.value);
+    hideBtn.setBackgroundColor(this._Color.TRANSPARENT.value);
     hideBtn.setOnClickListener(
       this.View$OnClickListener((view) => {
-        const builder = AlertDialog$Builder.$new(this.context);
-        builder.setTitle(JString.$new('Are you sure you want to hide the menu?'));
+        const builder = this._AlertDialog$Builder.$new(this.context);
+        builder.setTitle(this._JString.$new('Are you sure you want to hide the menu?'));
         builder.setMessage(
-          JString.$new('You can always show it again by clicking on the icon. Remember the hidden icon position.'),
+          this._JString.$new('You can always show it again by clicking on the icon. Remember the hidden icon position.'),
         );
         builder.setPositiveButton(
-          JString.$new('Yes'),
+          this._JString.$new('Yes'),
           this.DialogInterface$OnClickListener((dialog, which) => {
             this.hideMenu();
-            Toast.makeText(this.context, JString.$new('Menu hidden'), Toast.LENGTH_SHORT.value).show();
+            this._Toast.makeText(this.context, this._JString.$new('Menu hidden'), this._Toast.LENGTH_SHORT.value).show();
           }),
         );
 
         builder.setNegativeButton(
-          JString.$new('No'),
+          this._JString.$new('No'),
           this.DialogInterface$OnClickListener((dialog, which) => {
             // Do nothing
           }),
@@ -227,21 +227,21 @@ export default class Menu {
       }),
     );
 
-    const closeBtnLayoutParams = RelativeLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
-      ViewGroup$LayoutParams.WRAP_CONTENT.value,
+    const closeBtnLayoutParams = this._RelativeLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
+      this._ViewGroup$LayoutParams.WRAP_CONTENT.value,
     );
-    closeBtnLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT.value);
+    closeBtnLayoutParams.addRule(this._RelativeLayout.ALIGN_PARENT_RIGHT.value);
 
-    const closeBtn = Button.$new(this.context);
+    const closeBtn = this._Button.$new(this.context);
     closeBtn.setText(this.config.MENU_CLOSE_BUTTON_TEXT);
     closeBtn.setTextColor(this.config.TEXT_COLOR_PRIMARY);
     closeBtn.setLayoutParams(closeBtnLayoutParams);
-    closeBtn.setBackgroundColor(Color.TRANSPARENT.value);
+    closeBtn.setBackgroundColor(this._Color.TRANSPARENT.value);
     closeBtn.setOnClickListener(
       this.View$OnClickListener((view) => {
         this.collapseMenu();
-        Toast.makeText(this.context, JString.$new('Menu closed'), Toast.LENGTH_SHORT.value).show();
+        this._Toast.makeText(this.context, this._JString.$new('Menu closed'), this._Toast.LENGTH_SHORT.value).show();
       }),
     );
 
@@ -268,8 +268,8 @@ export default class Menu {
   public attach(): void {
     Java.scheduleOnMainThread(() => {
       this.windowManager = Java.cast(
-        this.context.getSystemService(Context.WINDOW_SERVICE.value),
-        Java.use('android.view.ViewManager'),
+        this.context.getSystemService(this._Context.WINDOW_SERVICE.value),
+        this._ViewGroup,
       );
       this.windowManager.addView(this.rootFrame, this.wmParams);
     });
@@ -278,24 +278,24 @@ export default class Menu {
   /** @internal */
   private collapseMenu(): void {
     this.isCollapsed = true;
-    this.mExpanded.setVisibility(View.GONE.value);
-    this.mCollapsed.setVisibility(View.VISIBLE.value);
+    this.mExpanded.setVisibility(this._View.GONE.value);
+    this.mCollapsed.setVisibility(this._View.VISIBLE.value);
     this.mCollapsed.setAlpha(this.config.MENU_COLLAPSED_ALPHA);
   }
 
   /** @internal */
   private expandMenu(): void {
     this.isCollapsed = false;
-    this.mCollapsed.setVisibility(View.GONE.value);
-    this.mExpanded.setVisibility(View.VISIBLE.value);
+    this.mCollapsed.setVisibility(this._View.GONE.value);
+    this.mExpanded.setVisibility(this._View.VISIBLE.value);
   }
 
   /** @internal */
   private hideMenu(): void {
     this.isCollapsed = true;
-    this.mCollapsed.setVisibility(View.VISIBLE.value);
+    this.mCollapsed.setVisibility(this._View.VISIBLE.value);
     this.mCollapsed.setAlpha(0);
-    this.mExpanded.setVisibility(View.GONE.value);
+    this.mExpanded.setVisibility(this._View.GONE.value);
   }
 
   /** @internal */
@@ -320,12 +320,12 @@ export default class Menu {
    * menu.Category('Player');
    */
   public Category(name: string): void {
-    const textView = TextView.$new(this.context);
+    const textView = this._TextView.$new(this.context);
     textView.setBackgroundColor(this.config.MENU_CATEGORY_BG_COLOR);
-    textView.setText(Html.fromHtml(name));
+    textView.setText(this._Html.fromHtml(name));
     textView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
-    textView.setGravity(Gravity.CENTER.value);
-    textView.setTypeface(null, Typeface.BOLD.value);
+    textView.setGravity(this._Gravity.CENTER.value);
+    textView.setTypeface(null, this._Typeface.BOLD.value);
     textView.setPadding(0, 5, 0, 5);
 
     this.addFeature(textView);
@@ -353,33 +353,33 @@ export default class Menu {
     if ((max - min) % step != 0) throw new Error('Step must be a divisor of (max - min)');
     if (min > max) throw new Error('Min must be less than max');
 
-    const linearLayout = LinearLayout.$new(this.context);
+    const linearLayout = this._LinearLayout.$new(this.context);
     linearLayout.setPadding(0, 5, 0, 5);
-    linearLayout.setOrientation(LinearLayout.VERTICAL.value);
-    linearLayout.setGravity(Gravity.CENTER.value);
+    linearLayout.setOrientation(this._LinearLayout.VERTICAL.value);
+    linearLayout.setGravity(this._Gravity.CENTER.value);
 
-    const textView = TextView.$new(this.context);
+    const textView = this._TextView.$new(this.context);
     textView.setText(
-      Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
+      this._Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
     );
     textView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
     textView.setHighlightColor(this.config.TEXT_COLOR_SECONDARY);
     textView.setHintTextColor(this.config.TEXT_COLOR_SECONDARY);
 
-    const seekBar = SeekBar.$new(this.context);
+    const seekBar = this._SeekBar.$new(this.context);
     seekBar.setMax((max - min) / step);
-    if (Build$VERSION.SDK_INT.value >= Build$VERSION_CODES.O.value) seekBar.setMin(0);
+    if (this._Build$VERSION.SDK_INT.value >= this._Build$VERSION_CODES.O.value) seekBar.setMin(0);
     seekBar.setPadding(35, 10, 35, 10);
     seekBar.setProgress(value.get());
-    seekBar.getThumb().setColorFilter(this.config.SEEKBAR_COLOR, PorterDuff$Mode.SRC_ATOP.value);
-    seekBar.getProgressDrawable().setColorFilter(this.config.SEEKBAR_PROGRESS_COLOR, PorterDuff$Mode.SRC_ATOP.value);
+    seekBar.getThumb().setColorFilter(this.config.SEEKBAR_COLOR, this._PorterDuff$Mode.SRC_ATOP.value);
+    seekBar.getProgressDrawable().setColorFilter(this.config.SEEKBAR_PROGRESS_COLOR, this._PorterDuff$Mode.SRC_ATOP.value);
 
     seekBar.setOnSeekBarChangeListener(
       this.SeekBar$OnSeekBarChangeListener({
         onProgressChanged: (seekBar, progress, fromUser) => {
           value.set(progress * step + min);
           textView.setText(
-            Html.fromHtml(
+            this._Html.fromHtml(
               featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>',
             ),
           );
@@ -402,13 +402,13 @@ export default class Menu {
    * menu.Switch('Godmode', isGodmode);
    */
   public Switch(featName: string, value: Primitive<boolean>): void {
-    const colorStateList = ColorStateList.$new(
-      [[-R$attr.state_enabled.value], [R$attr.state_checked.value], []],
-      [Color.BLUE.value, Color.GREEN.value, Color.RED.value],
+    const colorStateList = this._ColorStateList.$new(
+      [[-this._R$attr.state_enabled.value], [this._R$attr.state_checked.value], []],
+      [this._Color.BLUE.value, this._Color.GREEN.value, this._Color.RED.value],
     );
 
-    const switchView = Switch.$new(this.context);
-    switchView.setText(Html.fromHtml(featName));
+    const switchView = this._Switch.$new(this.context);
+    switchView.setText(this._Html.fromHtml(featName));
     switchView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
     switchView.setPadding(10, 5, 0, 5);
     try {
@@ -420,7 +420,7 @@ export default class Menu {
       switchView.getThumbDrawable().setTintList(colorStateList);
       switchView.getTrackDrawable().setTintList(colorStateList);
     } catch (e) {
-      Log.e('Error setting tint list for switch', e);
+      this._Log.e('Error setting tint list for switch', e);
       console.error(e);
       switchView.setTrackResource(0x7f0800a0);
       switchView.setThumbResource(0x7f0800a1);
@@ -445,8 +445,8 @@ export default class Menu {
    * menu.TextView('Hello <font color="#ff0000">world</font>!');
    */
   public TextView(text: string): void {
-    const textView = TextView.$new(this.context);
-    textView.setText(Html.fromHtml(text));
+    const textView = this._TextView.$new(this.context);
+    textView.setText(this._Html.fromHtml(text));
     textView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
     textView.setPadding(10, 5, 10, 5);
 
@@ -463,9 +463,9 @@ export default class Menu {
    */
   public WebTextView(html: string): void {
     Java.scheduleOnMainThread(() => {
-      const webView = WebView.$new(this.context);
+      const webView = this._WebView.$new(this.context);
       webView.loadData(html, 'text/html', 'UTF-8');
-      webView.setBackgroundColor(Color.TRANSPARENT.value);
+      webView.setBackgroundColor(this._Color.TRANSPARENT.value);
       webView.setPadding(0, 5, 0, 5);
       webView.getSettings().setDatabaseEnabled(false);
 
@@ -489,34 +489,34 @@ export default class Menu {
       throw new Error('Value must be between 0 and options.length');
     }
 
-    const textView = TextView.$new(this.context);
+    const textView = this._TextView.$new(this.context);
     textView.setText(
-      Html.fromHtml(
+      this._Html.fromHtml(
         featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + options[value.get()] + '</font>',
       ),
     );
     textView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
 
-    const radioGroup = RadioGroup.$new(this.context);
+    const radioGroup = this._RadioGroup.$new(this.context);
     radioGroup.setPadding(10, 5, 10, 5);
-    radioGroup.setOrientation(LinearLayout.VERTICAL.value);
-    Java.cast(radioGroup, ViewGroup).addView(textView);
+    radioGroup.setOrientation(this._LinearLayout.VERTICAL.value);
+    Java.cast(radioGroup, this._ViewGroup).addView(textView);
 
     for (let i = 0; i < options.length; i++) {
-      const radioButton = RadioButton.$new(this.context);
-      radioButton.setText(JString.$new(options[i]));
-      radioButton.setTextColor(Color.LTGRAY.value);
+      const radioButton = this._RadioButton.$new(this.context);
+      radioButton.setText(this._JString.$new(options[i]));
+      radioButton.setTextColor(this._Color.LTGRAY.value);
       // @ts-ignore
-      radioButton.setButtonTintList(ColorStateList.valueOf(this.config.RADIO_BUTTON_COLOR));
+      radioButton.setButtonTintList(this._ColorStateList.valueOf(this.config.RADIO_BUTTON_COLOR));
       radioButton.setId(i);
-      Java.cast(radioGroup, ViewGroup).addView(radioButton);
+      Java.cast(radioGroup, this._ViewGroup).addView(radioButton);
 
       radioButton.setOnCheckedChangeListener(
         this.CompoundButton$OnCheckedChangeListener((buttonView, isChecked) => {
           if (isChecked) {
             value.set(buttonView.getId());
             textView.setText(
-              Html.fromHtml(
+              this._Html.fromHtml(
                 featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + options[value.get()] + '</font>',
               ),
             );
@@ -540,13 +540,13 @@ export default class Menu {
    */
   public ButtonOnOff(featName: string, value: Primitive<boolean>) {
     const btn = this.Button(featName);
-    btn.setText(Html.fromHtml(featName + ': ' + (value.get() ? 'ON' : 'OFF')));
+    btn.setText(this._Html.fromHtml(featName + ': ' + (value.get() ? 'ON' : 'OFF')));
     btn.setBackgroundColor(value.get() ? this.config.BTN_ON_BG_COLOR : this.config.BTN_OFF_BG_COLOR);
 
     btn.setOnClickListener(
       this.View$OnClickListener(() => {
         value.set(!value.get());
-        btn.setText(Html.fromHtml(featName + ': ' + (value.get() ? 'ON' : 'OFF')));
+        btn.setText(this._Html.fromHtml(featName + ': ' + (value.get() ? 'ON' : 'OFF')));
         btn.setBackgroundColor(value.get() ? this.config.BTN_ON_BG_COLOR : this.config.BTN_OFF_BG_COLOR);
       }),
     );
@@ -566,7 +566,7 @@ export default class Menu {
     const button = this.Button(text);
     button.setOnClickListener(
       this.View$OnClickListener(() => {
-        const intent = Intent.$new(Intent.ACTION_VIEW.value, Uri.parse(url));
+        const intent = this._Intent.$new(this._Intent.ACTION_VIEW.value, this._Uri.parse(url));
         this.context.startActivity(intent);
       }),
     );
@@ -583,11 +583,11 @@ export default class Menu {
    * menu.CheckBox('God Mode', isGodMode);
    */
   public CheckBox(featName: string, value: Primitive<boolean>): void {
-    const checkbox = CheckBox.$new(this.context);
-    checkbox.setText(Html.fromHtml(featName));
+    const checkbox = this._CheckBox.$new(this.context);
+    checkbox.setText(this._Html.fromHtml(featName));
     checkbox.setTextColor(this.config.TEXT_COLOR_SECONDARY);
     // @ts-ignore
-    checkbox.setButtonTintList(ColorStateList.valueOf(this.config.CHECKBOX_COLOR));
+    checkbox.setButtonTintList(this._ColorStateList.valueOf(this.config.CHECKBOX_COLOR));
     checkbox.setOnCheckedChangeListener(
       this.CompoundButton$OnCheckedChangeListener((buttonView, isChecked) => {
         value.set(isChecked);
@@ -620,40 +620,40 @@ export default class Menu {
 
   /** @internal */
   private Collapse(title: string) {
-    const layoutParams = LinearLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
+    const layoutParams = this._LinearLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
     );
     layoutParams.setMargins(0, 5, 0, 5);
 
-    const collapse = LinearLayout.$new(this.context);
+    const collapse = this._LinearLayout.$new(this.context);
     collapse.setLayoutParams(layoutParams);
-    collapse.setVerticalGravity(Gravity.CENTER.value);
-    collapse.setOrientation(LinearLayout.VERTICAL.value);
+    collapse.setVerticalGravity(this._Gravity.CENTER.value);
+    collapse.setOrientation(this._LinearLayout.VERTICAL.value);
 
-    const collapseSub = LinearLayout.$new(this.context);
-    collapseSub.setVerticalGravity(Gravity.CENTER.value);
+    const collapseSub = this._LinearLayout.$new(this.context);
+    collapseSub.setVerticalGravity(this._Gravity.CENTER.value);
     collapseSub.setPadding(0, 5, 0, 5);
-    collapseSub.setOrientation(LinearLayout.VERTICAL.value);
+    collapseSub.setOrientation(this._LinearLayout.VERTICAL.value);
     collapseSub.setBackgroundColor(this.config.COLLAPSE_BG_COLOR);
-    collapseSub.setVisibility(View.GONE.value);
+    collapseSub.setVisibility(this._View.GONE.value);
 
-    const textView = TextView.$new(this.context);
+    const textView = this._TextView.$new(this.context);
     textView.setBackgroundColor(this.config.MENU_CATEGORY_BG_COLOR);
-    textView.setText(Html.fromHtml('▽ ' + title + ' ▽'));
-    textView.setGravity(Gravity.CENTER.value);
+    textView.setText(this._Html.fromHtml('▽ ' + title + ' ▽'));
+    textView.setGravity(this._Gravity.CENTER.value);
     textView.setTextColor(this.config.TEXT_COLOR_SECONDARY);
-    textView.setTypeface(null, Typeface.BOLD.value);
+    textView.setTypeface(null, this._Typeface.BOLD.value);
     textView.setPadding(0, 20, 0, 20);
 
     textView.setOnClickListener(
       this.View$OnClickListener((view) => {
-        if (collapseSub.getVisibility() == View.GONE.value) {
-          collapseSub.setVisibility(View.VISIBLE.value);
-          textView.setText(Html.fromHtml('△ ' + title + ' △'));
+        if (collapseSub.getVisibility() == this._View.GONE.value) {
+          collapseSub.setVisibility(this._View.VISIBLE.value);
+          textView.setText(this._Html.fromHtml('△ ' + title + ' △'));
         } else {
-          collapseSub.setVisibility(View.GONE.value);
-          textView.setText(Html.fromHtml('▽ ' + title + ' ▽'));
+          collapseSub.setVisibility(this._View.GONE.value);
+          textView.setText(this._Html.fromHtml('▽ ' + title + ' ▽'));
         }
       }),
     );
@@ -674,17 +674,17 @@ export default class Menu {
    * menu.InputNumber('Coins', coins);
    */
   public InputNumber(featName: string, value: Primitive<number>) {
-    const layoutParams = LinearLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
+    const layoutParams = this._LinearLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
     );
     layoutParams.setMargins(7, 5, 7, 5);
 
-    const linearLayout = LinearLayout.$new(this.context);
+    const linearLayout = this._LinearLayout.$new(this.context);
 
-    const button = Button.$new(this.context);
+    const button = this._Button.$new(this.context);
     button.setText(
-      Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
+      this._Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
     );
     button.setAllCaps(false);
     button.setLayoutParams(layoutParams);
@@ -693,32 +693,32 @@ export default class Menu {
 
     button.setOnClickListener(
       this.View$OnClickListener((view) => {
-        const builder = AlertDialog$Builder.$new(this.context);
-        builder.setTitle(JString.$new(featName));
+        const builder = this._AlertDialog$Builder.$new(this.context);
+        builder.setTitle(this._JString.$new(featName));
 
-        const input = EditText.$new(this.context);
-        input.setInputType(InputType.TYPE_CLASS_NUMBER.value);
-        input.setText(JString.$new(value.get().toString()), TextView$BufferType.EDITABLE.value);
+        const input = this._EditText.$new(this.context);
+        input.setInputType(this._InputType.TYPE_CLASS_NUMBER.value);
+        input.setText(this._JString.$new(value.get().toString()), this._TextView$BufferType.EDITABLE.value);
         builder.setView(input);
 
         builder.setPositiveButton(
-          JString.$new('OK'),
+          this._JString.$new('OK'),
           this.DialogInterface$OnClickListener((dialog, which) => {
             try {
-              const chars = Java.cast(input.getText(), Java.use('java.lang.CharSequence'));
-              value.set(JInteger.parseInt(chars.toString()));
+              const chars = Java.cast(input.getText(), this._JString);
+              value.set(this._JInteger.parseInt(chars.toString()));
               button.setText(
-                Html.fromHtml(
+                this._Html.fromHtml(
                   featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>',
                 ),
               );
             } catch (e) {
-              Toast.makeText(this.context, JString.$new('Invalid number'), Toast.LENGTH_SHORT.value).show();
+              this._Toast.makeText(this.context, this._JString.$new('Invalid number'), this._Toast.LENGTH_SHORT.value).show();
             }
           }),
         );
         builder.setNegativeButton(
-          JString.$new('Cancel'),
+          this._JString.$new('Cancel'),
           this.DialogInterface$OnClickListener((dialog, which) => {
             dialog.cancel();
           }),
@@ -741,17 +741,17 @@ export default class Menu {
    * menu.InputText('Player Name', playerName);
    */
   public InputText(featName: string, value: Primitive<string>) {
-    const layoutParams = LinearLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
+    const layoutParams = this._LinearLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
     );
     layoutParams.setMargins(7, 5, 7, 5);
 
-    const linearLayout = LinearLayout.$new(this.context);
+    const linearLayout = this._LinearLayout.$new(this.context);
 
-    const button = Button.$new(this.context);
+    const button = this._Button.$new(this.context);
     button.setText(
-      Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
+      this._Html.fromHtml(featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>'),
     );
     button.setAllCaps(false);
     button.setLayoutParams(layoutParams);
@@ -760,28 +760,28 @@ export default class Menu {
 
     button.setOnClickListener(
       this.View$OnClickListener((view) => {
-        const builder = AlertDialog$Builder.$new(this.context);
-        builder.setTitle(JString.$new(featName));
+        const builder = this._AlertDialog$Builder.$new(this.context);
+        builder.setTitle(this._JString.$new(featName));
 
-        const input = EditText.$new(this.context);
-        input.setInputType(InputType.TYPE_CLASS_TEXT.value);
-        input.setText(JString.$new(value.get()), TextView$BufferType.EDITABLE.value);
+        const input = this._EditText.$new(this.context);
+        input.setInputType(this._InputType.TYPE_CLASS_TEXT.value);
+        input.setText(this._JString.$new(value.get()), this._TextView$BufferType.EDITABLE.value);
         builder.setView(input);
 
         builder.setPositiveButton(
-          JString.$new('OK'),
+          this._JString.$new('OK'),
           this.DialogInterface$OnClickListener((dialog, which) => {
-            const chars = Java.cast(input.getText(), Java.use('java.lang.CharSequence'));
+            const chars = Java.cast(input.getText(), this._JString);
             value.set(chars.toString());
             button.setText(
-              Html.fromHtml(
+              this._Html.fromHtml(
                 featName + ": <font color='" + this.config.NUMBER_TEXT_COLOR + "'>" + value.get() + '</font>',
               ),
             );
           }),
         );
         builder.setNegativeButton(
-          JString.$new('Cancel'),
+          this._JString.$new('Cancel'),
           this.DialogInterface$OnClickListener((dialog, which) => {
             dialog.cancel();
           }),
@@ -816,15 +816,15 @@ export default class Menu {
 
   /** @internal */
   private Button(featName: string): Java.Wrapper {
-    const layoutParams = LinearLayout$LayoutParams.$new(
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
-      ViewGroup$LayoutParams.MATCH_PARENT.value,
+    const layoutParams = this._LinearLayout$LayoutParams.$new(
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
+      this._ViewGroup$LayoutParams.MATCH_PARENT.value,
     );
     layoutParams.setMargins(7, 5, 7, 5);
 
-    const btn = Button.$new(this.context);
+    const btn = this._Button.$new(this.context);
     btn.setLayoutParams(layoutParams);
-    btn.setText(Html.fromHtml(featName));
+    btn.setText(this._Html.fromHtml(featName));
     btn.setAllCaps(false);
     btn.setBackgroundColor(this.config.MENU_BUTTON_BG_COLOR);
     btn.setTextColor(this.config.TEXT_COLOR_SECONDARY);
@@ -885,8 +885,8 @@ export default class Menu {
   /** @internal */
   private View$OnTouchListener(): Java.Wrapper {
     const menu = this;
-    const initialTouch = Point.$new(0, 0);
-    const initialPosition = Point.$new(0, 0);
+    const initialTouch = this._Point.$new(0, 0);
+    const initialPosition = this._Point.$new(0, 0);
 
     return Java.registerClass({
       name: `${className}_OnTouchListener$${lambdaCounter()}`,
@@ -894,26 +894,26 @@ export default class Menu {
       methods: {
         onTouch(view: Java.Wrapper, motionEvent: Java.Wrapper): boolean {
           switch (motionEvent.getAction()) {
-            case MotionEvent.ACTION_DOWN.value:
+            case this._MotionEvent.ACTION_DOWN.value:
               initialTouch.x.value = Math.round(motionEvent.getRawX());
               initialTouch.y.value = Math.round(motionEvent.getRawY());
               initialPosition.x.value = menu.position.x.value;
               initialPosition.y.value = menu.position.y.value;
 
               break;
-            case MotionEvent.ACTION_MOVE.value:
+            case this._MotionEvent.ACTION_MOVE.value:
               menu.rootFrame.setAlpha(0.5);
               const x = initialPosition.x.value + Math.round(motionEvent.getRawX() - initialTouch.x.value);
               const y = initialPosition.y.value + Math.round(motionEvent.getRawY() - initialTouch.y.value);
               menu.position.x.value = x;
               menu.position.y.value = y;
-              const params = Java.cast(menu.rootFrame.getLayoutParams(), WindowManager$LayoutParams);
+              const params = Java.cast(menu.rootFrame.getLayoutParams(), this._WindowManager$LayoutParams);
               params.x.value = x;
               params.y.value = y;
               menu.windowManager.updateViewLayout(menu.rootFrame, params);
 
               break;
-            case MotionEvent.ACTION_UP.value:
+            case this._MotionEvent.ACTION_UP.value:
               menu.rootFrame.setAlpha(1);
               const rawX = Math.round(motionEvent.getRawX() - initialTouch.x.value);
               const rawY = Math.round(motionEvent.getRawY() - initialTouch.y.value);
@@ -933,7 +933,7 @@ export default class Menu {
   /** @internal */
   private dp(i: number): number {
     const displayMetrics = this.context.getResources().getDisplayMetrics();
-    const result = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP.value, i, displayMetrics);
+    const result = this._TypedValue.applyDimension(this._TypedValue.COMPLEX_UNIT_DIP.value, i, displayMetrics);
     return Math.round(result);
   }
 

@@ -1,4 +1,4 @@
-// import Java from 'frida-java-bridge'
+import Java from 'frida-java-bridge'
 export interface ConfigInterface {
   MENU_WIDTH: number;
   MENU_HEIGHT: number;
@@ -28,7 +28,7 @@ export interface ConfigInterface {
 }
 
 export default (callback: (config: ConfigInterface) => void): void => {
-  const Java: any = require('frida-java-bridge');
+  // const Java: any = require('frida-java-bridge');
   console.log('Making config object')
   Java.perform(() => {
     console.log('Inside Java.perform - Config')

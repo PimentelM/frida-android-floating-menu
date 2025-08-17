@@ -39,7 +39,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@types/frida-gum": "^19.0.0",
-    "frida-java-bridge": "^6.3.9",
+    "frida-java-bridge": "^7.0.8",
     "tsup": "^8.5.0",
     "typedoc": "^0.24.8",
     "typescript": "^5.1.6"
